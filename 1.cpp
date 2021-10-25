@@ -19,10 +19,13 @@ int main()
                 
         }
 
-        if(!f)
+        else
+        {
             cout << "Число " << number
                         << " Число не соответстует условиям. Введите новое число по условям." << endl;
-    } while(!f);
+        }
+    } 
+    while(!f);
 
     int max = 0;
     string s;
