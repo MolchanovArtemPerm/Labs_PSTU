@@ -17,8 +17,8 @@ int main()
         {
             f = number[0] != number[1] && number[0] != number[2] && number[1] != number[2];
 
-            for(int i = 0; i < number.length() && f; i++)
-                f = isdigit(number[i]);
+            for(int i = 0; i < number.length() && f; i++);
+                
         }
 
         if(!f)
