@@ -16,8 +16,6 @@ int main()
         if(number[0] != '0' && number.length() == 3)
         {
             f = number[0] != number[1] && number[0] != number[2] && number[1] != number[2];
-
-            for(int i = 0; i < number.length() && f; i++);
                 
         }
 
