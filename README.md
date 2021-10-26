@@ -2,7 +2,7 @@
 
 <h2>Задания на 26.10.2021</h2>
 
-1- https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/47ddd5df10ccbe4a674fb3db42efc9c51f55aa3a/1.cpp
+1- https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/de6a6a7694bda9e7c52542169cf109a5c22869b3/1.cpp
 
-2- https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/0af60ef8bea662ef2cd914bc8eb0656f1e0f7735/2.cpp
+2- https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/de6a6a7694bda9e7c52542169cf109a5c22869b3/2.cpp
 
