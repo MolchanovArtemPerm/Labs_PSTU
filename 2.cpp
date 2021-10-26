@@ -28,10 +28,13 @@ int main()
     }
 
     if(trys == trypoint)
-        cout << "С " << maxpoints << " Попытки" << endl <<
-        "Вы смогли отгадать загаданное число: " << trypoint << endl;
-
+        {
+            cout << "С " << maxpoints << " Попытки" <<
+            " Вы смогли отгадать загаданное число: " << trypoint << endl;
+        }
     else
-        cout << "за отведенные " << maxpoint << " попыток Вы не смогли отгадать число: " 
-        << trypoint << endl;
+       {
+           cout << "за отведенные " << maxpoint << " попыток Вы не смогли отгадать число: " 
+            << trypoint << endl;
+       }
 }
