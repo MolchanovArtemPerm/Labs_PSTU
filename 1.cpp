@@ -7,6 +7,8 @@ int main()
     string number = "";
 
     bool f = false;
+    
+    setlocale(LC_ALL, "ru");
 
     do {
         cout << "Введите число от 100 до 999: " << endl;
@@ -16,19 +18,17 @@ int main()
         if(number[0] != '0' && number.length() == 3)
         {
             f = number[0] != number[1] && number[0] != number[2] && number[1] != number[2];
-                
+
         }
 
         if(!f)
-            cout << "Число " << number << " не соответстует условиям. Введите новое число по условям." << endl; 
-            
-           
-        
+            cout << "Число " << number
+                        << " не удовлетворяет условию. Повторите с другим числом." << endl;
     } while(!f);
 
     int max = 0;
     string s;
-    for(int i = 0; i < number.length(); i++)
+    for(int i = 0, a; i < number.length(); i++)
     {
         if(number[i] != '0')
             s.append(number.substr(i, 1));
@@ -61,5 +61,6 @@ int main()
         s.clear();
     }
 
-    cout << "Максимальное число " << max << endl;
+    cout << "Максимальное число: " << max << endl;
+    return 0;
 }
