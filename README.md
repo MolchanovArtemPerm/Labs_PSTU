@@ -12,7 +12,9 @@
 <h4> Структура программы </h4>
 
 1 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Structure2.1.cpp
+
 2 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Structure2.2.cpp
+
 3 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Structure2.3.cpp
 
 <h4> Типы данных </h4>
