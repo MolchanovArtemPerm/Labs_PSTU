@@ -4,7 +4,7 @@ int main()
 {
     int a;
     int b;
-    cout << "Ââåäèòå äâà ÷èñëà: " << endl;
+    cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ´Ğ²Ğ° Ñ‡Ğ¸ÑĞ»Ğ°: " << endl;
     cin >> a;
     cin >> b;
     cout << a * b;
