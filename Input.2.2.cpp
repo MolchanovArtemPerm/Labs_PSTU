@@ -2,12 +2,12 @@
 using namespace std;
 int main()
 {
-    int a,b,c,d,e;
-    cout << "Введите пять чисел: " << endl;
-    cin >> a;
-    cin >> b;
-    cin >> c;
-    cin >> d;
-    cin >> e;
-    cout << e << endl << d << endl << c << endl << b << endl << a;
+    int a,b,c,d,e; //Инициалиризую целочисленный тип a,b,c,d,e
+    cout << "Введите пять чисел: " << endl; //Вывод на экран
+    cin >> a; //Ввод строки пользователя для a
+    cin >> b; //Ввод строки пользователя для b
+    cin >> c; //Ввод строки пользователя для c
+    cin >> d; //Ввод строки пользователя для d
+    cin >> e; //Ввод строки пользователя для e
+    cout << e << endl << d << endl << c << endl << b << endl << a; //Вывод на экран
 }
