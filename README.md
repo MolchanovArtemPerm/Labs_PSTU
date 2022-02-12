@@ -6,7 +6,7 @@
 
 2- https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Lab2.cpp
 
-<summary><h2>Задание №4 на 04.11.2021</h2></summary>
+<details><summary><h2>Задание №4 на 04.11.2021</h2></summary>
 
 <h4> Структура программы: </h4>
 
@@ -27,3 +27,4 @@
 1 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Input.2.1.cpp
 
 2 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Input.2.2.cpp
+</details>
