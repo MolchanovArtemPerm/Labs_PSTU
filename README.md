@@ -9,7 +9,7 @@
 </details>
 
 <details>
-<summary>Задание №4 на 04.11.2021<></summary>
+<summary>Задание №4 на 04.11.2021</summary>
 
 <h4> Структура программы: </h4>
 
@@ -30,4 +30,12 @@
 1 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Input.2.1.cpp
 
 2 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Input.2.2.cpp
+</details>
+
+<details>
+<summary>Задания на дистант 07.02-15.02 2022 </summary>
+
+  1 <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Input.2.1.cpp">Проверка</a>
+
+2
 </details>
