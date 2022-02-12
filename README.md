@@ -34,6 +34,7 @@
 
 <details>
 <summary>Задания на дистант 07.02-15.02 2022 </summary>
+  
   <details><summary>1-Лабораторные 7.1 и 7.2</summary>
   <a href="">Лабораторная №7.1</a> 
   
