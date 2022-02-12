@@ -6,8 +6,8 @@
 
 2- https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Lab2.cpp
 
-<h2><details>
-<summary>Задание №4 на 04.11.2021</summary></h2>
+<details>
+<h2><summary>Задание №4 на 04.11.2021</summary></h2>
 
 <h4> Структура программы: </h4>
 
