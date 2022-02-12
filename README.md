@@ -37,25 +37,25 @@
   
   <details><summary>1-Лабораторные 7.1 и 7.2</summary>
     
-  <a href="">Лабораторная №7.1</a> 
+  <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7442d01710456e6845097f1809fff1510c78f282/Lab_7.1.cpp">Лабораторная №7.1</a> 
   
   <a href="">Лабораторная №7.2</a>
     
   </details>
   
-  2-<a href="">Метод пузырька</a>
+  2-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7442d01710456e6845097f1809fff1510c78f282/MethodBubble.cpp">Метод пузырька</a>
   
-  3-<a href="">Метод вставки</a>
+  3-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7442d01710456e6845097f1809fff1510c78f282/MethodVstavki.cpp">Метод вставки</a>
   
   4-<a href="">Метод выбора</a>
   
   5-<a href="">Лабораторная №4</a>
   
-  6-<a href="">Лабораторная №5</a>
+  6-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7442d01710456e6845097f1809fff1510c78f282/Lab_5.cpp">Лабораторная №5</a>
   
-  7-<a href="">Сортировка Шелла</a>
+  7-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7442d01710456e6845097f1809fff1510c78f282/MethodShell.cpp">Сортировка Шелла</a>
   
-  8-<a href="">Сортировка Хоара</a>
+  8-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7442d01710456e6845097f1809fff1510c78f282/MethodHoara.cpp">Сортировка Хоара</a>
   
   9-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/d717131737f8e9f57469bedc0a068661c9cf62fe/9-ElementZ.cpp">Задача с элементом z</a>
   
