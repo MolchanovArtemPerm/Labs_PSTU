@@ -35,16 +35,25 @@
 <details>
 <summary>Задания на дистант 07.02-15.02 2022 </summary>
   1-<details><summary>Лабораторные 7.1 и 7.2</summary>
-  <a href="">Лабораторная №7.1</a>
+  <a href="">Лабораторная №7.1</a> 
+  
   <a href="">Лабораторная №7.2</a>
   </details>
   2-<a href="">Метод пузырька</a>
+  
   3-<a href="">Метод вставки</a>
+  
   4-<a href="">Метод выбора</a>
+  
   5-<a href="">Лабораторная №4</a>
+  
   6-<a href="">Лабораторная №5</a>
+  
   7-<a href="">Сортировка Шелла</a>
+  
   8-<a href="">Сортировка Хоара</a>
-  9-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/d717131737f8e9f57469bedc0a068661c9cf62fe/9-ElementZ.cpp">Задача с элементом z.</a>
+  
+  9-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/d717131737f8e9f57469bedc0a068661c9cf62fe/9-ElementZ.cpp">Задача с элементом z</a>
+  
   10-<a href="">Задача с заменой строки и столбца</a>
 </details>
