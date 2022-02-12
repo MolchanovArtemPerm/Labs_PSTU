@@ -35,7 +35,7 @@
 <details>
 <summary>Задания на дистант 07.02-15.02 2022 </summary>
 
-  1 <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Input.2.1.cpp">Проверка</a>
+  9- <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/d717131737f8e9f57469bedc0a068661c9cf62fe/9-ElementZ.cpp">Задача с элементом z</a>
 
 2
 </details>
