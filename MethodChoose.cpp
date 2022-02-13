@@ -4,9 +4,7 @@ int main()
 {
 	setlocale(LC_ALL,"Rus");
   srand(time(0));
-  int size;
-  cout<<"Размер массива: "; 
-  cin>>size;
+  int const size = 8;
   int a[size];
   for (int i = 0; i < size; i++){
     a[i] = rand() % 100;
