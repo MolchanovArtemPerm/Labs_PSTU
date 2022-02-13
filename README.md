@@ -53,11 +53,11 @@
   
   6-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7442d01710456e6845097f1809fff1510c78f282/Lab_5.cpp">Лабораторная №5</a>
   
-  7-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7442d01710456e6845097f1809fff1510c78f282/MethodShell.cpp">Сортировка Шелла</a>
+  7-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/c76558757e9a479ded8c9c7ca571003c446c3df2/MethodShell.cpp">Сортировка Шелла</a>
   
-  8-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7442d01710456e6845097f1809fff1510c78f282/MethodHoara.cpp">Сортировка Хоара</a>
+  8-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/1bc9915f6909f5b2d108019f5a0229f10aee6ebf/MethodHoara.cpp">Сортировка Хоара</a>
   
-  9-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/d717131737f8e9f57469bedc0a068661c9cf62fe/9-ElementZ.cpp">Задача с элементом z</a>
+  9-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/980c5d272ab97387b8a50bd796aec185be29eb4c/9-ElementZ.cpp">Задача с элементом z</a>
   
   10-<a href="">Задача с заменой строки и столбца</a>
 </details>
