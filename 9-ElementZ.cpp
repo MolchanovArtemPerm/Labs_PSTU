@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int size,z,p;
+int z,p;
 void delElement(int *a,int size){
   int k,c;
   bool f = false;
@@ -30,8 +30,7 @@ int main()
 {
   setlocale(LC_ALL,"Rus");
   srand(time(0));
-  cout<<"Размер массива: "; 
-  cin>>size;
+  int const size = 7;
   int *a = new int[size];
   for (int i = 0; i < size; i++){
     a[i] = rand() % 100;
