@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int i, j, n, d, count;
+int i, j, d, count;
 void Shell(int a[], int n)
 {
   d=n;
@@ -27,8 +27,7 @@ int main()
 {
   setlocale(LC_ALL,"Rus");
   srand(time(0));
-  cout<<"Размер массива = "; 
-  cin>>n;
+  int const n = 7;
   int *a= new int[n];
   for (i=0; i<n; i++)
   {  
