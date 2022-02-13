@@ -47,7 +47,7 @@
   
   3-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7442d01710456e6845097f1809fff1510c78f282/MethodVstavki.cpp">Метод вставки</a>
   
-  4-<a href="">Метод выбора</a>
+  4-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/018b03f4ba9b4ba0527cd05693ae6355a336777d/MethodChoose.cpp">Метод выбора</a>
   
   5-<a href="">Лабораторная №4</a>
   
