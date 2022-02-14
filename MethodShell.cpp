@@ -1,41 +1,34 @@
 #include <iostream>
 using namespace std;
-int i, j, d, count;
-void Shell(int a[], int n)
-{
-  d=n;
-  d=d/2;
-  while (d>0)
-  {
-    for (i=0; i<n-d; i++)
-    {
-      j=i;
-      while (j>=0 && a[j]>a[j+d])
-      {
-        count=a[j];
-        a[j]=a[j+d];
-        a[j+d]=count;
-        j--;
-      }
-    }
-    d=d/2;
-  }
-  for (i=0; i<n; i++) 
-    cout<<a[i]<<" ";
+int shell(int *a,int size) {
+	int t;
+	int d = (size+1) / 2;
+	while (d > 0) {
+		for (int i = 0; i < size - d; i++) {
+			if (a[i] > a[i + d]) {
+				t = a[i + d];
+				a[i + d] = a[i];
+				a[i] = t;
+			}
+		}
+		d = d / 2;
+	}
+  cout << endl << endl;
+	for (int i = 0; i < size; i++)
+		cout << a[i] << ' ';
+	return 0;
 }
 int main()
 {
-  setlocale(LC_ALL,"Rus");
+	setlocale(LC_ALL, "ru");
   srand(time(0));
-  int const n = 7;
-  int *a= new int[n];
-  for (i=0; i<n; i++)
-  {  
+	int const size = 7;
+	int* a = new int[size];
+	for (int i = 0; i<size; i++){
     a[i] = rand() % 101;
-    cout<<a[i]<<" ";
+    cout<<a[i] << " ";
   }
-  cout<<endl<<"Результирующий массив: ";
-  Shell(a, n);
-  delete [] a;
-  return 0;
+	shell(a, size);
+	delete[] a;
+	return 0;
 }
