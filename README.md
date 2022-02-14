@@ -53,7 +53,7 @@
   
   6-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7442d01710456e6845097f1809fff1510c78f282/Lab_5.cpp">Лабораторная №5</a>
   
-  7-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/c76558757e9a479ded8c9c7ca571003c446c3df2/MethodShell.cpp">Сортировка Шелла</a>
+  7-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/49d68e20dad1457db3763830f3904bbc0ca2fdd5/MethodShell.cpp">Сортировка Шелла</a>
   
   8-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/1bc9915f6909f5b2d108019f5a0229f10aee6ebf/MethodHoara.cpp">Сортировка Хоара</a>
   
