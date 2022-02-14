@@ -1,30 +1,38 @@
 #include <iostream>
 using namespace std;
 int z,p;
-void delElement(int *a,int size){
+int delElement(int *a,int size){
   int k,c;
   bool f = false;
+  bool stop = false;
   cout<<"Введите элемент который нужно удалить: ";
   cin>>z;
   for (int i = 0; !f ; i++)
   {
     if (a[i] == z){
       k = i;
+      stop = false;
       f = true;
     }
+    else 
+      stop = true;
   }
-  for(int i = k; i < size-1; i++){
-    a[i]=a[i+1];
+  if (stop == true){
+    for(int i = k; i < size-1; i++){
+      a[i]=a[i+1];
+    }
+    for (int i = 0; i < size-1 ; i++){
+      cout << a[i] << " ";
+    }
+    cout<<endl<<endl<<"Введите индекс на который нужно вставить элемент: "; 
+    cin>>p;
+    a[p]=z;
+    for (int i = 0; i < size-1 ; i++){
+      cout << a[i] << " ";
+    }
   }
-  for (int i = 0; i < size-1 ; i++){
-    cout << a[i] << " ";
-  }
-  cout<<endl<<endl<<"Введите индекс на который нужно вставить элемент: "; 
-  cin>>p;
-  a[p]=z;
-  for (int i = 0; i < size-1 ; i++){
-    cout << a[i] << " ";
-  }
+  else
+    return 0;
 }
 int main()
 {
