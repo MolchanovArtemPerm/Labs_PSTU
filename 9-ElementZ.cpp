@@ -1,7 +1,17 @@
 #include <iostream>
 using namespace std;
 int z,p;
-int delElement(int *a,int size){
+int main()
+{
+  setlocale(LC_ALL,"Rus");
+  srand(time(0));
+  int const size = 7;
+  int *a = new int[size];
+  for (int i = 0; i < size; i++){
+    a[i] = rand() % 100;
+    cout << a[i] << " ";
+  }
+  cout<<endl<<endl;
   int k,c;
   bool f = false;
   bool stop = false;
@@ -17,7 +27,7 @@ int delElement(int *a,int size){
     else 
       stop = true;
   }
-  if (stop == true){
+  if (stop == false){
     for(int i = k; i < size-1; i++){
       a[i]=a[i+1];
     }
@@ -31,20 +41,5 @@ int delElement(int *a,int size){
       cout << a[i] << " ";
     }
   }
-  else
-    return 0;
-}
-int main()
-{
-  setlocale(LC_ALL,"Rus");
-  srand(time(0));
-  int const size = 7;
-  int *a = new int[size];
-  for (int i = 0; i < size; i++){
-    a[i] = rand() % 100;
-    cout << a[i] << " ";
-  }
-  cout<<endl<<endl;
-  delElement(a,size);
   return 0;
 }
