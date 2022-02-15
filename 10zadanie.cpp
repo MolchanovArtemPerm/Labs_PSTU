@@ -8,8 +8,8 @@ void perem(int *a2,int K,int L)
     {
       int zam;
       zam = a2[i];
-      a2[i] = a2[i+1];
-      a2[i+1] = zam;
+      a2[i] = a2[i-1];
+      a2[i-1] = zam;
     }
   }
   else
@@ -41,13 +41,12 @@ int main()
     }
     cout << endl;
   }
-  cout << "Введите номер столбца от 1 до 4" << endl;
+  cout << endl << "Введите номер столбца от 1 до 4" << endl;
   cin >> K;
-  cout << "Введите номер строки от 1 до 4" << endl;
+  cout << endl << "Введите номер строки от 1 до 4" << endl;
   cin >> L;
   --K;
   --L;
-  cout << endl << endl;
   if ( K == L)
   {
     int temp;
@@ -94,6 +93,7 @@ int main()
       a[L][i]=a2[i];
     }
   }
+  cout << endl << "Матрица после работы цикла:" << endl;
   for (int i = 0; i < size; i++)
     {
       for (int j = 0; j < size; j++)
