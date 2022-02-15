@@ -3,9 +3,9 @@
 <details>
 <summary>Задание №2 на 30.10.2021</summary>
 
-1- https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Lab1.cpp
+1- <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Lab1.cpp">Лабораторная №1</a>
 
-2- https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Lab2.cpp
+2- <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Lab2.cpp">Лабораторная №2</a>
 </details>
 
 <details>
@@ -13,23 +13,23 @@
 
 <h4> Структура программы: </h4>
 
-1 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Structure2.1.cpp
+1 - <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Structure2.1.cpp">Структура данных 2.1</a>
 
-2 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Structure2.2.cpp
+2 - <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Structure2.2.cpp">Структура данных 2.1</a>
 
-3 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Structure2.3.cpp
+3 - <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Structure2.3.cpp">Структура данных 2.1</a>
 
 <h4> Типы данных: </h4>
 
-1 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/DataTypes.2.1.cpp
+1 - <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/DataTypes.2.1.cpp">Типы данных 2.1</a>
 
-2 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/DataTypes.2.2.cpp
+2 - <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/DataTypes.2.2.cpp">Типы данных 2.2</a>
 
 <h4> Ввод-Вывод: </h4>
 
-1 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Input.2.1.cpp
+1 - <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Input.2.1.cpp">Ввод-вывод 2.1</a>
 
-2 - https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Input.2.2.cpp
+2 - <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/main/Input.2.2.cpp">Ввод-вывод 2.2</a>
 </details>
 
 <details>
@@ -59,5 +59,5 @@
   
   9-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/980c5d272ab97387b8a50bd796aec185be29eb4c/9-ElementZ.cpp">Задача с элементом z</a>
   
-  10-<a href="">Задача с заменой строки и столбца</a>
+  10-<a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/aecc9f7c53a832b73922fc750d68a48773745452/10zadanie.cpp">Задача с заменой строки и столбца</a>
 </details>
