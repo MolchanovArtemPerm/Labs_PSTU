@@ -3,10 +3,6 @@ using namespace std;
 int size = 5;
 void del(int *steck,int size)
 {
-  for(int i = size-1; i < size-1; i++)
-  {
-    steck[i]=steck[i+1];
-  }
   cout << endl << "Стек состоит из:" << endl;
   for (int i = 0; i < size-1 ; i++)
   {
