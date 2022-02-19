@@ -71,5 +71,5 @@
   <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/c4cbd31689827fe2339be90a4faacdfcfe0cfde0/8ferzey.cpp">Задача "8 ферзей"</a>
   
   
-  <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7a5e1515ebfa06da992493edd0686127b9dddc55/HanoyskayaTower.cpp">Задача Ханойская башня</a>
+  <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7a5e1515ebfa06da992493edd0686127b9dddc55/HanoyskayaTower.cpp">Задача "Ханойская башня"</a>
 </details>
