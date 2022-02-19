@@ -65,6 +65,8 @@
 <details>
 <summary>Задания на 21.02.2022 </summary>
   <a href="">Лабораторная №6</a>
-  <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/c4cbd31689827fe2339be90a4faacdfcfe0cfde0/8ferzey.cpp">Задача "8 ферзей"</a>\n
+  
+  <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/c4cbd31689827fe2339be90a4faacdfcfe0cfde0/8ferzey.cpp">Задача "8 ферзей"</a>
+  
   <a href="">Задача Ханойская башня</a>
 </details>
