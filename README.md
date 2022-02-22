@@ -65,7 +65,7 @@
 <details>
 <summary>Задания на 21.02.2022 </summary>
   
-  <a href="">Лабораторная №6</a>
+  <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/ae17b192017752c54b7e81d0130dfbd0cde1651b/Lab_6.cpp">Лабораторная №6</a>
   
   
   <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/c4cbd31689827fe2339be90a4faacdfcfe0cfde0/8ferzey.cpp">Задача "8 ферзей"</a>
