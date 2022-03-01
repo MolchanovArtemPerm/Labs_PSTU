@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
 int main()
 {
   setlocale(LC_ALL, "Ru");
@@ -34,17 +33,13 @@ int main()
   output.close();
   ifstream input2("File2.txt");
   for(int i = 0; i < size ; i++)
-  {
     getline(input2, row);
-  }
   for(int i = 0; i < row.length();i++)
   {
     for(int j = 0; j < 42;j++)
     {
       if(row[i] == mass[j])
-      {
         sogl++;
-      }
     }
   }
   cout << "Согласных в последней строке файла = " << sogl;
