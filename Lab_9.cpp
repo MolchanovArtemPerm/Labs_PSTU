@@ -13,7 +13,7 @@ int main()
   string row,stroka;
   ifstream input("File1.txt");
   ofstream output("File2.txt");
-  int q = 0;
+  int sogl = 0;
   while(!input.eof())
   {
     getline(input, row);
@@ -43,11 +43,11 @@ int main()
     {
       if(row[i] == mass[j])
       {
-        q++;
+        sogl++;
       }
     }
   }
-  cout << "Согласных в последней строке файла = " << q;
+  cout << "Согласных в последней строке файла = " << sogl;
   input2.close();
   return 0;
 }
