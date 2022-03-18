@@ -40,9 +40,5 @@ int main() {
     st2.push(st.top());
     st.pop();      
   }
-  while(!st.empty())
-  {
-    st.pop();      
-  }
   return 0;
 }
