@@ -28,7 +28,7 @@ int main(){
   setlocale(LC_ALL,"Rus");
   system("chcp1251");
   system("cls");
-  int size = 5;
+  int size = 6;
   char *mass = new char[size];
   char *mass2 = new char[size];
   char n;
@@ -56,12 +56,12 @@ int main(){
   cout << endl << endl;
   int temp = interpol(mass,size,'a');
   cout << temp << endl;
-  for(int i = 0; i < size;i++)
-  {
-    if(i == temp)
-      mass2[i+1] = 'E';
+  size++;
+  for(int i = 0; i <= temp; i++)
     mass2[i] = mass[i];
-  }
+  mass2[temp+1] = 'E';
+  for(int i = temp+2; i < size; i++)
+    mass2[i] = mass[i-1];
   for(int i = 0; i < size; i++)
     cout << mass2[i] << ' ';
   return 0;
