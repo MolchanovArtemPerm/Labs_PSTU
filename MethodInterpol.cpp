@@ -4,12 +4,13 @@ using namespace std;
 int interpol(char* mass,int size,char key)
 {
   int left = 0;
-  int right = size;
+  int right = size-1;
   int mid = 0;
   bool f = false;
   while((left <= right) && f != true)
   {
     mid = left + ((key - mass[left])*(right - left)) / (mass[right] - mass[left]);
+    cout << mid;
     if(mass[mid] < key)
       left = mid + 1;
     else if(mass[mid] > key)
@@ -21,7 +22,8 @@ int interpol(char* mass,int size,char key)
     return left;
   else if(mass[right] == key)
     return right;
-  return 0;
+  else 
+    return mid;
 }
 
 int main(){
