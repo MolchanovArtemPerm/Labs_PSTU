@@ -41,7 +41,7 @@ class Money{
   {
     kopecks = NewKopecks;
   }
-  Money operator++();
+  Money&operator++();
   Money operator++(int);
   Money operator+(const Money& t);
   bool operator<(const Money& t);
@@ -54,16 +54,20 @@ class Money{
   bool Money::operator<(const Money& t)
   {
     if(this->rubles < t.rubles)
+    {
       if(this->kopecks < t.kopecks)
         return true;
+    }
     else
       return false;
   }
   bool Money::operator==(const Money& t)
   {
     if(this->rubles == t.rubles)
+    {
       if(this->kopecks == t.kopecks)
         return true;
+    }
     else
       return false;
   }
@@ -71,28 +75,24 @@ class Money{
   bool Money::operator>(const Money& t)
   {
     if(this->rubles > t.rubles)
+    {
       if(this->kopecks > t.kopecks)
         return true;
+    }
     else
       return false;
   }
   
-  Money Money::operator++()
+  Money&Money::operator++()
   {
-    int temp = rubles*100 + kopecks;
-    ++temp;
-    rubles = temp / 100;
-    kopecks = temp % 100;
+    ++kopecks;
     return *this;
   }
 
   Money Money::operator++(int)
   {
-    int temp = rubles*100 + kopecks;
-    temp++;
     Money t(rubles,kopecks);
-    rubles = temp / 100;
-    kopecks = temp % 100;
+    ++kopecks;
     return t;
   }
 
@@ -111,7 +111,7 @@ class Money{
     return (out<<t.rubles<<","<<t.kopecks);
   }
 
-  istream& operator>>(istream&in,Money& t)
+  istream&operator>>(istream&in,Money& t)
   {
     cout << "rubles: ";
     in>>t.rubles;
@@ -119,6 +119,8 @@ class Money{
     in>>t.kopecks;
     return in;
   }
+
+
 int main()
 {
   Money a;
@@ -133,6 +135,7 @@ int main()
   cout << "a = " << a << endl;
   cout << "b = " << b << endl;
   cout << "c = " << c << endl;
+  cout << "d = " << d << endl;
   bool result1 = a < b;
   bool result2 = d > a;
   bool result3 = a == c;
