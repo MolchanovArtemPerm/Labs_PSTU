@@ -22,7 +22,7 @@ class Triad
     this->second = t.second;
     this->third = t.third;
   }
-  ~Triad(){} // Деструктор
+  virtual ~Triad(){} // Деструктор
   int Get_first() // Вывод первого
   {
     return first;
@@ -137,7 +137,11 @@ class Date: public Triad
     this->second = t.second;
     this->third = t.third;
   }
-  ~Date(){} // Деструктор
+  virtual ~Date(){} // Деструктор
+  virtual void Show()
+  {
+    cout << "День = " << first << endl << "Месяц = " << second << endl << "Год = " << third;
+  }
   int Get_first() // Вывод дня
   {
     return first;
@@ -295,6 +299,7 @@ int main()
   a.Comparsion();
   // Проверка второго класса
   Date c(14,9,1985);
+  c.Show();
   Date d(20,7,1856);
   c.Comparsion_day(d);
   cout << endl;
