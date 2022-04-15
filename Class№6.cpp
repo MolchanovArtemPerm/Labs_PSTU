@@ -104,8 +104,13 @@ class Many
   }
   int& operator[](int index)
   {
-    if(index < size)
-      return data[index];
+    if(index >= 0)
+    {
+      if(index < size)
+        return data[index];
+      else
+        cout << "Ошибка";
+    }
     else
       cout << "Ошибка";
   }
@@ -122,17 +127,14 @@ class Many
   {
     return size;
   }
-  void operator>(const int k)
+  bool operator>(const int k)
   {
     for(int i = 0;i < k;i++)
     {
       if(data[i] == k)
-      {
-        cout << "Число принадлежит множеству." << endl;
-        exit(0);
-      }
+        return true;
     }
-    cout << "Число не принадлежит множеству." << endl;
+    return false;
   }
   friend istream& operator>>(istream&in,Many& t);
   friend ostream& operator<<(ostream&out, const Many& t);
@@ -169,6 +171,6 @@ int main()
   for(i = a.first();i != a.last();++i)
     cout << *i << ' ';
   cout << endl;
-  a > 3;
+  cout << (a > 2);
   return 0;
 }
