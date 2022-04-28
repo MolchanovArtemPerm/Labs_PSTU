@@ -31,7 +31,6 @@ class Object
   virtual void Show() = 0;
   virtual void Input() = 0;
   virtual ~Object(){};
-  virtual void HandleEvent(const TEvent& t) = 0;
 };
 
 
@@ -257,14 +256,14 @@ class Dialog: public Vector
     EndState = 0;
   }
   virtual ~Dialog(){};
-  virtual void GetEvent(TEvent& t)
+  void GetEvent(TEvent& t)
   {
     string Oper = "+-mqzs";
     string s;
     string param;
-    char code = s[0];
     cout << "Введите: " << endl;
     cin >> s;
+    char code = s[0];
     if(Oper.find(code) >= 0)
     {
       t.what = evMessage;
@@ -280,20 +279,21 @@ class Dialog: public Vector
     }
     else t.what = evNothing;
   }
-  virtual void Execute()
+  int Execute()
   {
     TEvent event;
     do{
       EndState = 0;
       GetEvent(event);
       HandleEvent(event);
-    }while(!Valid());
+    }while(Valid());
+    return EndState;
   }
   bool Valid()
   {
     return EndState == 0;
   }
-  virtual void ClearEvent(TEvent& t)
+  void ClearEvent(TEvent& t)
   {
     t.what = evNothing;
   }
@@ -301,7 +301,7 @@ class Dialog: public Vector
   {
     EndState = 1;
   }
-  virtual void HandleEvent(TEvent& t)
+  void HandleEvent(TEvent& t)
   {
     if(t.what == evMessage)
     {
