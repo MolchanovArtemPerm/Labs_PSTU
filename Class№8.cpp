@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#pragma once
 using namespace std;
 
 class Abiturient;
@@ -18,80 +17,55 @@ const int cmShow = 4;
 const int cmMake = 6;
 const int cmQuit = 101;
 
-struct TEvent
-{
+struct TEvent {
   int what;
   int command;
 };
 
-class Object
-{
-  public:
+class Object {
+public:
   Object(){};
   virtual void Show() = 0;
   virtual void Input() = 0;
+  virtual int Get_age() = 0;
   virtual ~Object(){};
 };
 
-
-class Person: public Object
-{
-  protected:
+class Person : public Object {
+protected:
   string name;
   int age;
 
-  public:
+public:
   // Конструкторы
-  Person()
-  {
+  Person() {
     name = "NULL";
     age = 0;
   }
-  Person(string name,int age)
-  {
+  Person(string name, int age) {
     this->name = name;
     this->age = age;
   }
-  Person(const Person& t)
-  {
+  Person(const Person &t) {
     this->name = t.name;
     this->age = t.age;
   }
-  virtual ~Person()
-  {
-  }
+  virtual ~Person() {}
   // Модификаторы
-  void Set_name(string name)
-  {
-    this->name = name;
-  }
-  void Set_age(int age)
-  {
-    this->age = age;
-  }
+  void Set_name(string name) { this->name = name; }
+  void Set_age(int age) { this->age = age; }
   // Селекторы
-  string Get_name()
-  {
-    return name;
-  }
-  int Get_age()
-  {
-    return age;
-  }
-  Person& operator=(const Person& t)
-  {
-    if(&t == this)
+  string Get_name() { return name; }
+  int Get_age() { return age; }
+  Person &operator=(const Person &t) {
+    if (&t == this)
       return *this;
     name = t.name;
     age = t.age;
     return *this;
   }
-  void Show()
-  {
-    cout << endl << "Имя: " << name << "\nВозраст: " << age;
-  }
-  void Input()
-  {
+  void Show() { cout << endl << "Имя: " << name << "\nВозраст: " << age; }
+  void Input() {
     cout << endl << "Введите имя: ";
     cin >> name;
     cout << "Возраст: ";
@@ -99,62 +73,45 @@ class Person: public Object
   }
 };
 
-class Abiturient: public Person
-{
-  protected:
+class Abiturient : public Person {
+protected:
   int point;
-  string speciality; 
+  string speciality;
 
-  public:
+public:
   // Конструкторы
-  Abiturient()
-  {
+  Abiturient() {
     point = 0;
-    speciality = "NULL"; 
+    speciality = "NULL";
   }
-  Abiturient(int point,string speciality)
-  {
+  Abiturient(int point, string speciality) {
     this->point = point;
-    this->speciality = speciality; 
+    this->speciality = speciality;
   }
-  Abiturient(const Abiturient& t)
-  {
+  Abiturient(const Abiturient &t) {
     point = t.point;
-    speciality = t.speciality; 
+    speciality = t.speciality;
   }
   ~Abiturient(){};
   // Модификаторы
-  void Set_point(int point)
-  {
-    this->point = point;
-  }
-  void Set_speciality(string speciality)
-  {
-    this->speciality = speciality;
-  }
+  void Set_point(int point) { this->point = point; }
+  void Set_speciality(string speciality) { this->speciality = speciality; }
   // Селекторы
-  int Get_point()
-  {
-    return point;
-  }
-  string Get_speciality()
-  {
-    return speciality;
-  }
-  Abiturient& operator=(const Abiturient& t)
-  {
-    if(&t == this)
+  int Get_point() { return point; }
+  string Get_speciality() { return speciality; }
+  Abiturient &operator=(const Abiturient &t) {
+    if (&t == this)
       return *this;
     point = t.point;
     speciality = t.speciality;
     return *this;
   }
-  void Show()
-  {
-    cout << endl << "Баллы: " << point << endl << "Специальность: " << speciality;
+  void Show() {
+    cout << endl
+         << "Баллы: " << point << endl
+         << "Специальность: " << speciality;
   }
-  void Input()
-  {
+  void Input() {
     cout << endl << "Введите количество баллов: ";
     cin >> point;
     cout << "Введите специальность: ";
@@ -162,182 +119,165 @@ class Abiturient: public Person
   }
 };
 
-class Vector
-{
-  protected:
+class Vector {
+protected:
   Object **beg;
   int size;
   int current;
 
-  public:
-  Vector()
-  {
+public:
+  Vector() {
     beg = 0;
     size = 0;
     current = 0;
   }
-  Vector(int n)
-  {
-    beg = new Object* [n];
+  Vector(int n) {
+    beg = new Object *[n];
     current = 0;
     size = n;
   }
-  ~Vector()
-  {
-    if(beg!=0)
-      delete [] beg;
+  ~Vector() {
+    if (beg != 0)
+      delete[] beg;
     beg = 0;
   }
-  void Add()
-  {
+  void Add() {
     Object *p;
     cout << "1 - Person" << endl << "2 - Abiturient" << endl;
     int y;
     cin >> y;
-    if(y == 1)
-    {
+    if (y == 1) {
       Person *a = new Person;
       a->Input();
       p = a;
-      if(current < size)
-      {
+      if (current < size) {
         beg[current] = p;
         current++;
       }
-    }
-    else if(y == 2)
-    {
-      {
-        Abiturient *b = new Abiturient;
-        b->Input();
-        p = b;
-      }
-      if(current < size)
-      {
+    } else if (y == 2) {
+      Abiturient *b = new Abiturient;
+      b->Input();
+      p = b;
+      if (current < size) {
         beg[current] = p;
         current++;
-      }      
-    }
-    else 
+      }
+    } else
       return;
   }
-  void Show()
-  {
-    if(current == 0)
-      cout << endl << "Пусто";
+  void Show() {
+    if (current == 0)
+      cout << endl << "Пусто" << endl;
     Object **p = beg;
-    for(int i = 0;i < current;i++)
-    {
+    for (int i = 0; i < current; i++) {
       (*p)->Show();
       p++;
     }
   }
-  int operator()()
-  {
-    return current;
-  }
-  void Del()
-  {
-    if(current == 0)
+  int operator()() { return current; }
+  void Del() {
+    if (current == 0)
       return;
     current--;
   }
+  void Mid() {
+    double middle = 0;
+    for (int i = 0; i < current; i++) {
+      middle += beg[i]->Get_age();
+    }
+    cout << "Средний возраст = " << middle / current;
+  }
 };
 
-
-class Dialog: public Vector
-{
-  protected:
+class Dialog : public Vector {
+protected:
   int EndState;
-  public:
+
+public:
   // Конструктор
-  Dialog()
-  {
-    EndState = 0;
-  }
+  Dialog() { EndState = 0; }
   virtual ~Dialog(){};
-  void GetEvent(TEvent& t)
-  {
+  void GetEvent(TEvent &t) {
     string Oper = "+-mqzs";
     string s;
     string param;
-    cout << "Введите: " << endl;
+    cout << endl << "Введите: ";
     cin >> s;
     char code = s[0];
-    if(Oper.find(code) >= 0)
-    {
+    if (Oper.find(code) >= 0) {
       t.what = evMessage;
-      switch(code)
-      {
-        case 'm': t.command = cmMake;break; // Создание
-        case '+': t.command = cmAdd;break; // Добавить
-        case '-': t.command = cmDel;break; // Удалить
-        case 's': t.command = cmShow;break; // Вывести элементы
-        case 'z': t.command = cmMid;break; // Вывести сред.возраст
-        case 'q': t.command = cmQuit;break; // Конец
+      switch (code) {
+      case 'm':
+        t.command = cmMake;
+        break; // Создание
+      case '+':
+        t.command = cmAdd;
+        break; // Добавить
+      case '-':
+        t.command = cmDel;
+        break; // Удалить
+      case 's':
+        t.command = cmShow;
+        break; // Вывести элементы
+      case 'z':
+        t.command = cmMid;
+        break; // Вывести сред.возраст
+      case 'q':
+        t.command = cmQuit;
+        break; // Конец
       }
-    }
-    else t.what = evNothing;
+    } else
+      t.what = evNothing;
   }
-  int Execute()
-  {
+  int Execute() {
     TEvent event;
-    do{
+    do {
       EndState = 0;
       GetEvent(event);
       HandleEvent(event);
-    }while(Valid());
+    } while (Valid());
     return EndState;
   }
-  bool Valid()
-  {
-    return EndState == 0;
-  }
-  void ClearEvent(TEvent& t)
-  {
-    t.what = evNothing;
-  }
-  void EndExec()
-  {
-    EndState = 1;
-  }
-  void HandleEvent(TEvent& t)
-  {
-    if(t.what == evMessage)
-    {
-      switch(t.command)
-      {
-        case cmMake: 
-          cout << "Введите размер: ";
-          cin >> size;
-          beg = new Object* [size];
-          current = 0;
-          ClearEvent(t);
-          break;
-        case cmAdd:
-          Add();
-          ClearEvent(t);
-          break;
-        case cmDel:
-          Del();
-          ClearEvent(t);
-          break;
-        case cmShow:
-          Show();
-          ClearEvent(t);
-          break;
-        case cmQuit:
-          EndExec();
-          ClearEvent(t);
+  bool Valid() { return EndState == 0; }
+  void ClearEvent(TEvent &t) { t.what = evNothing; }
+  void EndExec() { EndState = 1; }
+  void HandleEvent(TEvent &t) {
+    if (t.what == evMessage) {
+      switch (t.command) {
+      case cmMake:
+        cout << endl << "Введите размер: ";
+        cin >> size;
+        beg = new Object *[size];
+        current = 0;
+        ClearEvent(t);
+        break;
+      case cmAdd:
+        Add();
+        ClearEvent(t);
+        break;
+      case cmDel:
+        Del();
+        ClearEvent(t);
+        break;
+      case cmMid:
+        Mid();
+        ClearEvent(t);
+        break;
+      case cmShow:
+        Show();
+        ClearEvent(t);
+        break;
+      case cmQuit:
+        EndExec();
+        ClearEvent(t);
         break;
       };
     };
   }
-};   
+};
 
-int main()
-{
-  setlocale(LC_ALL,"Rus");
+int main() {
+  setlocale(LC_ALL, "Rus");
   Dialog D;
   D.Execute();
   return 0;
