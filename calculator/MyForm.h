@@ -916,45 +916,45 @@ namespace calcLog {
 			break;
 		}
 	}
-private: System::Void textBox4_TextChanged(System::Object^  sender, System::EventArgs^  e) {
-	cin(sender,e);
-}
-private: System::Void btndot_Click(System::Object^  sender, System::EventArgs^  e) {
-	switch (stage)
-	{
-	case 0:
-		if (!f1) {
-			if (textBox2->Text != "") {
-				textBox2->Text += ",";
-				f1 = true;
-			}
-		}
-		break;
-	case 1:
-		if (!f2) {
-			if (textBox5->Text != "") {
-				textBox5->Text += ",";
-				f2 = true;
-			}
-		}
-		break;
-	case 3:
-		if (!f3) {
-			if (textBox3->Text != "") {
-				textBox3->Text += ",";
-				f3 = true;
-			}
-		}
-		break;
-	case 4:
-		if (!f4) {
-			if (textBox6->Text != "") {
-				textBox6->Text += ",";
-				f4 = true;
-			}
-		}
-		break;
+	private: System::Void textBox4_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+		cin(sender, e);
 	}
-}
-};
+	private: System::Void btndot_Click(System::Object^  sender, System::EventArgs^  e) {
+		switch (stage)
+		{
+		case 0:
+			if (!f1) {
+				if (textBox2->Text != "") {
+					textBox2->Text += ",";
+					f1 = true;
+				}
+			}
+			break;
+		case 1:
+			if (!f2) {
+				if (textBox5->Text != "") {
+					textBox5->Text += ",";
+					f2 = true;
+				}
+			}
+			break;
+		case 3:
+			if (!f3) {
+				if (textBox3->Text != "") {
+					textBox3->Text += ",";
+					f3 = true;
+				}
+			}
+			break;
+		case 4:
+			if (!f4) {
+				if (textBox6->Text != "") {
+					textBox6->Text += ",";
+					f4 = true;
+				}
+			}
+			break;
+		}
+	}
+	};
 }
