@@ -73,3 +73,12 @@
   
   <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/7a5e1515ebfa06da992493edd0686127b9dddc55/HanoyskayaTower.cpp">Задача "Ханойская башня"</a>
 </details>
+
+<details>
+<summary>Творческая работа</summary>
+  
+  <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/1427688cc38257935d7021ddc098fb9bf3d92409/calculator/MyForm.h">Калькуятор логарифмов</a>
+  
+  
+  <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/1427688cc38257935d7021ddc098fb9bf3d92409/Komi/komi.cpp">Задача Коммивояжёра</a>
+</details>
