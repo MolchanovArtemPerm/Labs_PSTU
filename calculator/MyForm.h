@@ -622,6 +622,7 @@ namespace calcLog {
 	}
 	private: System::Void btnresult(System::Object^ sender, System::EventArgs^ e) {
 		double a, b, c, a2, b2;
+		arrow5->Visible = false;
 		a = System::Convert::ToDouble(textBox2->Text);
 		a2 = System::Convert::ToDouble(textBox5->Text);
 		if (textBox3->Text != "")
@@ -956,5 +957,5 @@ namespace calcLog {
 			break;
 		}
 	}
-	};
+};
 }
