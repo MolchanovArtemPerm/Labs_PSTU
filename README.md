@@ -84,8 +84,8 @@
 </details>
 
 <details>
-<summary>Тетрис c++ с помощью SFML</summary>
+<summary>Тетрис C++ с помощью SFML</summary>
   
-  <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/6a3041b239ef01835da301aa2173bf8eba48d935/Tetris.cpp">Тетрис</a>
+      <a href="https://github.com/MolchanovArtemPerm/Labs_PSTU/blob/6a3041b239ef01835da301aa2173bf8eba48d935/Tetris.cpp">Тетрис</a>
   
 </details>
